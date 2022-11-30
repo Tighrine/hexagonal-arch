@@ -14,7 +14,7 @@
 	},
 	"openapi": "3.0.0",
 	"paths": {
-		"/test/logger": {
+		"/hello": {
 			"get": {
 				"operationId": "Get",
 				"responses": {

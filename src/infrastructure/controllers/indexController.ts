@@ -12,17 +12,17 @@ import { Request as ExRequest, Response as ExResponse } from "express";
 import Logger from "../../domain/ports/Logger";
 
 @autoInjectable()
-@Route("test")
+@Route("hello")
 export class indexController extends Controller {
     constructor(@inject("Logger") private logger?: Logger) {
         super();
     }
-    @Get("/logger")
+    @Get()
     public async get(@Request() req: ExRequest): Promise<{message: string}> {
-        this.logger?.warn(`This is warn`, {service: req.path, functionName: "get logger"});
-        this.logger?.info(`This is an info`, {service: req.path, functionName: "get logger"});
+        this.logger?.warn(`This is warn`, {service: req.path, functionName: "get hello"});
+        this.logger?.info(`This is an info`, {service: req.path, functionName: "get hello"});
         return {
-            message: "request received"
+            message: "hello world"
         };
     }
 
