@@ -3,11 +3,10 @@ import {
     Controller,
     Get,
     Route,
-    Request,
-    Response
+    Request
 } from "tsoa";
 import { autoInjectable, inject } from "tsyringe";
-import { Request as ExRequest, Response as ExResponse } from "express";
+import { Request as ExRequest } from "express";
 
 import Logger from "../../domain/ports/Logger";
 
