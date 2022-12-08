@@ -1,4 +1,3 @@
-// src/users/usersController.ts
 import {
     Controller,
     Get,
@@ -12,10 +11,11 @@ import Logger from "../../domain/ports/Logger";
 
 @autoInjectable()
 @Route("hello")
-export class indexController extends Controller {
+export class helloController extends Controller {
     constructor(@inject("Logger") private logger?: Logger) {
         super();
     }
+    
     @Get()
     public async get(@Request() req: ExRequest): Promise<{message: string}> {
         this.logger?.warn(`This is warn`, {service: req.path, functionName: "get hello"});
@@ -24,5 +24,4 @@ export class indexController extends Controller {
             message: "hello world"
         };
     }
-
 }

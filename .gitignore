@@ -1,4 +1,5 @@
 .vscode
+.env
 .yarn
 .DS_Store
 *.log
@@ -13,5 +14,28 @@
 # Documentation here: https://yarnpkg.com/features/zero-installs
 !.yarn/cache
 #.pnp.*
-
-
+build
+build/routes.ts
+build/swagger.json
+build/build/routes.js
+build/build/routes.js.map
+build/src/app.js
+build/src/app.js.map
+build/src/infrastructure/diContainer.js
+build/src/infrastructure/diContainer.js.map
+build/src/infrastructure/adapters/WinstonLogger.js
+build/src/infrastructure/adapters/WinstonLogger.js.map
+build/src/infrastructure/controllers/indexController.js
+build/src/infrastructure/controllers/indexController.js.map
+build/routes.ts
+build/swagger.json
+build/build/routes.js
+build/build/routes.js.map
+build/src/app.js
+build/src/app.js.map
+build/src/infrastructure/diContainer.js
+build/src/infrastructure/diContainer.js.map
+build/src/infrastructure/adapters/WinstonLogger.js
+build/src/infrastructure/adapters/WinstonLogger.js.map
+build/src/infrastructure/controllers/indexController.js
+build/src/infrastructure/controllers/indexController.js.map

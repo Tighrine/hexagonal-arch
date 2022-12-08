@@ -1,5 +1,7 @@
 import { ServiceStatus } from "../../utils/Types";
 
-export interface Database {
+interface Database {
     ping(): Promise<ServiceStatus>;
 }
+
+export default Database;

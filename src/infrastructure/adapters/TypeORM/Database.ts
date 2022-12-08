@@ -1,9 +1,9 @@
 import { DataSource } from 'typeorm';
-import { Database as IDatabase } from "../../../domain/ports/Database";
+import DomainDatabase from "../../../domain/ports/Database";
 import { ServiceStatus } from "../../../utils/Types";
 import AppDataSource from './DataSource';
 
-export default class Database implements IDatabase {
+export default class Database implements DomainDatabase {
     private dataSource: DataSource;
 
     constructor() {

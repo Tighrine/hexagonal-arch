@@ -1,10 +1,11 @@
 {
-  "name": "hexagonal-arch",
+  "name": "boomrang-hexagonal-arch",
   "packageManager": "yarn@3.3.0",
   "scripts": {
     "build": "tsoa spec-and-routes && tsc",
     "start": "nodemon build/src/app.js",
-    "dev": "concurrently 'nodemon' 'nodemon -x tsoa spec-and-routes'"
+    "dev": "concurrently 'nodemon' 'nodemon -x tsoa spec-and-routes'",
+    "typeorm": "typeorm-ts-node-commonjs"
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.2",
@@ -23,6 +24,7 @@
     "global": "^4.4.0",
     "multer": "^1.4.5-lts.1",
     "nodemon": "^2.0.20",
+    "pg": "^8.8.0",
     "promise.any": "^2.0.5",
     "swagger-ui-express": "^4.6.0",
     "ts-node": "^10.9.1",
